@@ -882,9 +882,6 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .checkbox-label {
@@ -897,28 +894,21 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.checkbox:checked + .checkbox-icon {
-  border-color: transparent;
+.checkbox:checked + .checkbox-icon svg {
+  fill: transparent;
   background-color: var(--accent-color);
   background-image: url("../images/icons/chek.svg");
   background-size: contain;
   background-origin: border-box;
 }
 
-.checkbox-icon {
+.checkbox-icon svg {
   display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
   border-color: #212121;
   border-radius: 2px;
-}
-
-.policy {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .submit {
