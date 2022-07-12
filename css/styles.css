@@ -900,8 +900,11 @@ textarea {
   background-image: url("../images/icons/chek.svg");
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
-
+.checkbox-icon {
+  line-height: 1;
+}
 .checkbox-icon svg {
   display: inline-block;
   width: 16px;
