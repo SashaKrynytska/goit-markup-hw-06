@@ -230,9 +230,8 @@ img {
   display: block;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid transparent;
-  padding: 10px 32px;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -725,7 +724,7 @@ img {
   padding: 63px 24px 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(102%);
   transition: transform var(--anim);
 }
 
@@ -770,6 +769,7 @@ img {
 
   transform: translate(-50%, -50%);
 
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
   background-color: var(--background-color);
@@ -780,11 +780,11 @@ img {
 
 .modal-close-btn {
   position: absolute;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin: 8px 8px auto auto;
   cursor: pointer;
   fill: #000000;
   background-color: var(--background-color);
@@ -799,7 +799,7 @@ img {
 }
 
 .modal-title {
-  margin: 40px 40px 12px 40px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -852,6 +852,7 @@ textarea {
 }
 
 .comment {
+  height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -881,17 +882,25 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-svg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-item {
   position: absolute;
   top: 50%;
   left: 15px;
   fill: var(--title-text-color);
 
+  transform: translateY(-50%);
+
   transition: fill var(--anim);
 }
 
-.form-field:focus-within > .form-item,
-.form-field:hover > .form-item {
+.modal-svg:focus-within > .form-item,
+.modal-svg:hover > .form-item {
   fill: var(--accent-color);
 }
 
@@ -1001,10 +1010,10 @@ textarea {
   display: block;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 55px;
+  width: 200px;
+  height: 50px;
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
