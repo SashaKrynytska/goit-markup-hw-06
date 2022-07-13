@@ -910,8 +910,8 @@ textarea {
   gap: 7px;
 }
 
-.checkbox:focus + .checkbox-icon svg {
-  fill: var(--accent-color);
+.checkbox:focus + .checkbox-icon {
+  color: var(--accent-color);
 }
 
 .checkbox:checked + .checkbox-icon svg {
