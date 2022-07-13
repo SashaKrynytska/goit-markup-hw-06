@@ -612,6 +612,11 @@ img {
   border-radius: 4px;
 }
 
+.email:focus,
+.email.hover {
+  outline: none;
+}
+
 /*Портфолио*/
 .portfolio {
   background-color: var(--background-color);
@@ -905,6 +910,10 @@ textarea {
   gap: 7px;
 }
 
+.checkbox:focus + .checkbox-icon svg {
+  fill: var(--accent-color);
+}
+
 .checkbox:checked + .checkbox-icon svg {
   fill: transparent;
   background-color: var(--accent-color);
@@ -915,7 +924,9 @@ textarea {
   background-origin: border-box;
   background-repeat: no-repeat;
   border-radius: 2px;
+  cursor: pointer;
 }
+
 .checkbox-icon {
   display: inline-flex;
   align-items: center;
