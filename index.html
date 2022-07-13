@@ -674,12 +674,13 @@
               <h3 class="social-title">Подпишитесь на рассылку</h3>
               <div class="signup_form">
                 <form name="signup_form" autocomplete="on" novalidate>
-                  <label for="mail">
+                  <label for="user-mail">
                     <input
                       class="email"
                       type="email"
                       name="email"
                       placeholder="E-mail"
+                      id="user-mail"
                     />
                   </label>
 
@@ -744,15 +745,42 @@
           </div>
 
           <label class="checkbox-label">
-            <input class="checkbox" type="checkbox" name="policy" id="policy" />
+            <input
+              class="visually-hidden checkbox"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
             <span class="checkbox-icon">
               <svg>
                 <use href="./images/sprite.svg#icon-checkbox"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a class="policy" href="/">Условия договора</a>
+            <span class="form-checkbox-agreement">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="policy" href="/">Условия договора</a></span
+            >
           </label>
+
+          <!-- 
+          <label class="form-checkbox">
+            <input
+              class="visually-hidden form-checkbox-input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <span class="form-checkbox-custom-checkbox">
+              <svg class="form-checkbox-icon" width="11" height="8">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span class="form-checkbox-agreement">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="policy" href="/">Условия договора</a>
+            </span>
+          </label>
+          -->
 
           <button type="submit" class="submit">Отправить</button>
         </form>
