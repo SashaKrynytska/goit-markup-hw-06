@@ -724,7 +724,7 @@ img {
   padding: 63px 24px 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(102%);
+  transform: translateY(100%);
   transition: transform var(--anim);
 }
 
